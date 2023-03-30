@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    background-color: red;
+    justify-content: space-between;
+    display: flex;
+}
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+header > img {
+    width: 60px;
+    margin-left: 10px;
+    margin-bottom: 3px;
+    margin-top: 3px;
+}
+.menu > li > a{
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+}
+.menu > li {    
+    display: flex;
+    text-shadow: 2px 2px black;
+    font-weight: 600;
+    align-items: center;
+    height: 60px;
+   padding-left:10px ;
+   padding-right: 10px;
+}
+.menu >li:hover {
+    background-color: brown;
+}
+.menu {
+    display: flex;
+}
+.div1 {
+    background-image: url(../img/pizza.jpg);
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    background-size: cover;
+    height: 400px;
+}
+.div1 > a {
+    border: white 1px solid;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.671);
+    text-decoration: none;
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+    width: 100px;
+    box-shadow: 2px 2px 5px     black;
+    transition: 300ms;
+}
+.div1 > a:hover {
+    background-color: rgba(0, 0, 0, 0.911);
+    transition: 300ms;
+}
+.div1 > h1 {
+    color: white;
+    text-shadow: 3px 3px 5px black;
+    margin-bottom: 50px;
+}
+
+.geral {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.geral > h2 {
+    color: green;
+    margin: 0 auto;
+}
+.pizzas {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+.p1{
+    background-image: url(../img/foto1.jpg);
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 350px;
+    background-color: green;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    box-shadow: -5px 5px 7px 1px black;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    border: 3px solid black;
+    min-width: 300px;
+    min-height: 350px;
+    max-width: 300px;
+    max-height: 350px;
+}
+.p2 {
+    background-image: url(../img/foto2.jpg);
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 350px;
+    background-color: green;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    box-shadow: -5px 5px 7px 1px black;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    border: 3px solid black;
+    min-width: 300px;
+    min-height: 350px;
+    max-width: 300px;
+    max-height: 350px;
+}
+.p3 {
+    background-image: url(../img/foto3.jpg);
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 350px;
+    background-color: green;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    box-shadow: -5px 5px 7px 1px black;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    border: 3px solid black;
+    min-width: 300px;
+    min-height: 350px;
+    max-width: 300px;
+    max-height: 350px;
+}
+.preco {
+    background-color: yellow;
+    border: 2px solid black;
+    border-radius: 10px;
+    color: black;
+    text-decoration: none;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    box-shadow: 2px 2px 5px;
+}
+.pizza {
+    color: white;
+    text-shadow: 2px 2px 3px black;
+}
+hr {
+    background-image: linear-gradient(to right,rgba(255, 255, 255, 0), red, rgba(255, 255, 255, 0));
+    border: none;
+    height: 3px;
+    margin: 5px;
+}
+.promo {
+    display: flex;
+    overflow: scroll;
+}
+.promo::-webkit-scrollbar{
+    display: none;
+}
+.fim {
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.fim > ul > li > a {
+    text-decoration: none;
+    color: white;
+
+}
+.fim > ul > li {
+    list-style: none;
+    color: white;
+    margin: 5px;
+}
+.fim > ul {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+@media (max-width:500px) {
+    .pizzas {
+        flex-direction: row;
+        margin: 10px;
+    }
+    .p1 {
+        min-width: 100%;
+    }
+    .p2 {
+        min-width: 100%;
+    }
+    .p3 {
+        min-width: 100%;
+    }
+}
+     
